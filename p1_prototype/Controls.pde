@@ -1,19 +1,28 @@
 class Controls {
   private float x, y;           //X & Y cord. 
   private int w, h;             //Width and height
+  private boolean visible;      //Boolean used for testing purpose
   private float diameter = 5;   //Diameter of pulse circle
   private float opacity = 255;  //Start opacity of pulse circle
 
-  Controls(float x, float y, int w, int h) {
+
+  Controls(float x, float y, int w, int h, boolean visible) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
+    this.visible = visible;
   }
 
   void display() {               //Draws the touchable area
     noStroke();
-    fill(black);
+    
+    if (visible) {               //If the boolean visible is true
+      fill(black);               //Then fill black
+    } else {
+      fill(black, 0);            //Else fill with 0 opacity
+    }
+    
     rect(x, y, w, h);
   }
 
