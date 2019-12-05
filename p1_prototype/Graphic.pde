@@ -8,7 +8,7 @@ class Graphic {
   private int paperH = 760;
   private float paperX = 140;
   private float paperY = height;
-  private float animationSpeed = 20;
+  private float animationSpeed = 30;
   private boolean close = false;
   private boolean open;
 

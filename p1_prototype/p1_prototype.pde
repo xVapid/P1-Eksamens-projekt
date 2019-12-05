@@ -9,7 +9,7 @@ String[] loremipsum;
 //Image variables
 PImage sceneBg_img;
 PImage img_placeholder;
-PImage paper1;
+PImage paper1, paper2, paper3;
 
 //Font variables
 PFont titleFont, subTextFont;
@@ -31,7 +31,10 @@ void setup() {
   //Load image files
   sceneBg_img = loadImage("ClassroomW2.png");
   img_placeholder = loadImage("img_placeholder.jpg");
+  //Papers
   paper1 = loadImage("paper1.png");
+  paper2 = loadImage("paper2.png");
+  paper3 = loadImage("paper3.png");
 
   //Load fonts
   titleFont = createFont("chalk.ttf", 45); //Change font later
@@ -48,7 +51,7 @@ void setup() {
 
   //Setup constructors for Graphic
   sceneBg = new Graphic(sceneBg_img, 0, 0, width, height);
-  scene1 = new Graphic(width/2, 50, "Augemented Reality \nHow is it used?", loremipsum, paper1);
+  scene1 = new Graphic(width/2, 50, "Augemented Reality \nHow is it used?", loremipsum, paper2);
   scene2 = new Graphic(width/2, 50, "new title", loremipsum, paper1);
 }
 
