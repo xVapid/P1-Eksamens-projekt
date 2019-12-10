@@ -5,7 +5,6 @@ class Controls {
   private float diameter = 5;   //Diameter of pulse circle
   private float opacity = 255;  //Start opacity of pulse circle
 
-
   Controls(float x, float y, int w, int h, boolean visible) {
     this.x = x;
     this.y = y;
