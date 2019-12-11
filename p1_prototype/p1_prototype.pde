@@ -1,4 +1,4 @@
-//P1 prototype - Group 10 - Mikkel, Nanna, Rasmus, Nicolai, Mathilde //<>//
+//P1 prototype - Group 10 - Mikkel, Nana, Rasmus, Nicolai, Mathilde, Lukas //<>//
 //Object variables
 Controls scene1Bt, scene2Bt, scene3Bt, scene4Bt, close1, close2, close3, close4;
 Graphic sceneBg, frontPage, scene1, scene2, scene3, scene4, boardText;
